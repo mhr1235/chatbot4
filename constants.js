@@ -66,7 +66,7 @@ const replies = [
   ["Bye", "Nothing beats spending time with other Trans Women who are about empowering eachother... thank you for this passed weekend", "I wish you all love and support"],
   ["lemony", "sometime this weekend, drink specials"],
   ["from the  club  @ 7-9pm  with my boys"],
-  ["fantastic!"],
+  ["fantastic!", "it's gonna be juicy!", "I'm just showing what nana says", "yeah girl that was SUCH a fun show! You got to see us all in our rawest glory!", "Just posted a photo @ The Edge", "New nails!!!", "Sorry about all the ruckus going on.  We're in the middle of all things!"],
   ["you mean going French? hehe","You better make the most of it and feel your oats girl you are on vacation.... you're allowed to be as disgusting as you want","it gets better .."],
   ["Mystery man n mysterious package!"],
   ["Girl... the power of the breasts are  too real","Thank you  my love!","What was funny? i don't get it. Why would he/she leave the club early?", "Yassssssss"]
