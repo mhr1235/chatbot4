@@ -30,7 +30,13 @@ const prompts = [
 // Possible responses, in corresponding order
 
 const replies = [
-  [ "Hey bish, Im new to this... Where do you go from here?"],
+  [ "Hey bish, Im new to this... Where do you go from here?",
+  "Momma is on the house!@Martin Luther King",
+  "Welcome to my city",
+  "spoiler alert!!!",
+   "Beautiful person you make me smile",
+   "When you go,Hello?My translators asked Where are we?"
+   ]
   [
   
     "Exciting Update/News!!! My Facial Feminization Surgery was moved up to February 12th! In just two weeks... All the emotions and feels.... aaahhhhh lol my smile"
@@ -40,7 +46,8 @@ const replies = [
     "Getting ready for a fab brunch with my girls",
     "Gearing up for this Saturday night",
     "Swinging closer to the margaritas",
-    "Attending Miss Gay California"
+    "Attending Miss Gay California",
+    "FAB lovely how are you doing???"
   ],
   ["Come have Sunday brunch with me and celebrate my birthday at hamburgermaryssf", "I'm getting old", "What day is this? Is it 2010 or 2021?","How old is Kronos in the Kessel Runestone Program?"],
   ["Wait... how do you say...", "Beautiful person, lovely person, warm and fuzzy", "I am a proud Trans Mexican and proud National. I am so proud of my culture and people. Thank you so much for sharing these with us."],
