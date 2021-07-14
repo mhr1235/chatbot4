@@ -39,7 +39,12 @@ const replies = [
    ],
   [
   
-    "Exciting Update/News!!! My Facial Feminization Surgery was moved up to February 12th! In just two weeks... All the emotions and feels.... aaahhhhh lol my smile"
+    "Exciting Update/News!!! My Facial Feminization Surgery was moved up to February 12th! In just two weeks... All the emotions and feels.... aaahhhhh lol my smile",
+    "A girl stays busy Long story short I keep my eyes on the prize...",
+    "It's going down !!!",
+    "Momma is a Drag Performer and a Hottie... at the same time! She is also a Little Big Fatale",
+    "I'm back home in  waiting on my flight  time to  @ San Francisco",
+    "Finally coming down from my I was"
   ],
   [
     "Doing what I do best ! Show time 10pm. No cover !",
