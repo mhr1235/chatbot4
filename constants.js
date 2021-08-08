@@ -30,21 +30,21 @@ const prompts = [
 // Possible responses, in corresponding order
 
 const replies = [
-  [ "Hey bish, Im new to this... Where do you go from here?",
-  "Momma is on the house!@Martin Luther King",
-  "Welcome to my city",
-  "spoiler alert!!!",
-   "Beautiful person you make me smile",
-   "When you go,Hello?My translators asked Where are we?"
+  [ "Hey bish, Im new to this... Where do you go from here?"//,
+  //"Momma is on the house!@Martin Luther King",
+  //"Welcome to my city",
+  //"spoiler alert!!!",
+   //"Beautiful person you make me smile",
+   //"When you go,Hello?My translators asked Where are we?"
    ],
   [
   
-    "Exciting Update/News!!! My Facial Feminization Surgery was moved up! All the emotions and feels.... aaahhhhh lol my smile",
-    "A girl stays busy Long story short I keep my eyes on the prize...",
-    "It's going down !!!",
-    "Momma is a Drag Performer and a Hottie... at the same time! She is also a Little Big Fatale",
-    "I'm back home in  waiting on my flight  time to  @ San Francisco",
-    "Finally coming down from my I was"
+    "Exciting Update/News!!! My Facial Feminization Surgery was moved up! All the emotions and feels.... aaahhhhh lol my smile"//,
+    //"A girl stays busy Long story short I keep my eyes on the prize...",
+    //"It's going down !!!",
+    //"Momma is a Drag Performer and a Hottie... at the same time! She is also a Little Big Fatale",
+    //"I'm back home in  waiting on my flight  time to  @ San Francisco",
+    //"Finally coming down from my I was"
   ],
   [
     "Doing what I do best ! Show time 10pm. No cover !",
