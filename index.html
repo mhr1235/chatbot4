@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+  <title>showgirl-bot</title>
+  <link rel="icon" href="./images/bot4.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'><link rel="stylesheet" href="./style.css">
+
+<style type="text/css">
+  #landscape{
+         position: absolute;
+         top: 0px;
+         left: 0px;
+         background: linear-gradient(0deg, #f67d94, #fe978b);
+         width: 100%;
+         height: 100%;
+         display: none; 
+         z-index: 20000;
+         opacity: 0.9;
+         margin:0 auto;
+}
+#landscape div{
+        font-family: "Open Sans", sans-serif;
+        color: #FFFFFF;  
+        font-size: 24px;                                
+        opacity: 1;
+        top: 50%;
+        position: absolute;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+}
+</style>
+
+<script>          
+      function doOnOrientationChange()
+      {
+        switch(window.orientation) 
+        {  
+          case -90:                 
+                 document.getElementById("landscape").style.display="block";
+                 break;
+          case 90:              
+                document.getElementById("landscape").style.display="block";                 
+                break;
+         default:                   
+                document.getElementById("landscape").style.display="none";
+                setTimeout(function() { $(window).scrollTop(0); }, 0);
+                break;                            
+        }
+      }
+
+      //Listen to orientation change
+      window.addEventListener('orientationchange', doOnOrientationChange);  
+
+    </script>
+
+</head>
+<body onload="doOnOrientationChange();">
+
+<div id="landscape">
+  <div>Please Rotate Device to Portrait</div>
+</div>
+
+<div class="chat">
+
+
+  <div class="chat-title">
+    
+   <a href="https://mhr1235.github.io/future_proof/index.html"> <div class="modal-form">
+  <span class="close-btn"></span>
+</div></a>
+    <!-- <a class="close" href="../index.html"></a> -->
+    <figure class="avatar">
+       <img src="./images/face1.jpg" /></figure> 
+
+      <!-- <a id="home" href="../index.html"><img src="./images/bot2.png" /></a></figure> -->
+      <h1>showgirl-bot</h1>
+  </div>
+  <div class="messages">
+    <div class="messages-content"></div>
+  </div>
+  <div class="message-box">
+    <textarea type="text" class="message-input" id="input" placeholder="Type message..."></textarea>
+    <button type="submit" class="message-submit">Send</button>
+  </div>
+
+</div>
+<div class="bg"></div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script><script  src="./script.js"></script>
+<script type="text/javascript" src="./constants.js" ></script>
+
+</body>
+</html>
