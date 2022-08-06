@@ -5,7 +5,29 @@ var $messages = $('.messages-content'),
 var myPix = new Array("./images/df1.jpg","./images/df2.jpg","./images/df3.jpg","./images/df4.jpg","./images/df5.jpg","./images/df6.jpg");
  var randomNum = Math.floor(Math.random() * myPix.length);
 
+const alreadyDone = [];
+const remoteArray =[];
+let randomValueIndex;
+let indexOfItemInMyArray;
 
+const randomValueFromArray = (myArray) => {
+
+  if (alreadyDone.length === 0) {
+    for (let i = 0; i < myArray.length; i++) alreadyDone.push(i);
+  }
+   randomValueIndex = Math.floor(Math.random() * alreadyDone.length);
+   indexOfItemInMyArray = alreadyDone[randomValueIndex];
+
+ 
+  
+
+  alreadyDone.splice(randomValueIndex, 1);
+
+  return myArray[indexOfItemInMyArray];
+  
+
+
+};
 
 $(window).load(function() {
   $messages.mCustomScrollbar();
@@ -71,7 +93,7 @@ function insertMessage() {
     .replace(/ please/g, "")
     .replace(/r u/g, "are you");
 
-    console.log(text);
+    //console.log(text);
 
   msg = $('.message-input').val();
   if ($.trim(msg) == '') {
@@ -200,11 +222,37 @@ function randomNumber(max) {
       
 
     $('.message.loading').remove();
-    $.getJSON("https://mhr1235.github.io/gpt2_simple_data/chatbot4.json", function(data) {
+/*    $.getJSON("https://mhr1235.github.io/gpt2_simple_data/chatbot4.json", function(data) {
     a = randomNumber((data.texts).length);
     //console.log((data.texts).length);
     //console.log(data.texts[a]);
     $('<div class="message new"><figure class="avatar"><img src=" ' + './images/df'+ (randomNum+1) +'.jpg" /></figure>' + data.texts[a] + '</div>').appendTo($('.mCSB_container')).addClass('new');
+
+
+
+});*/
+
+$.getJSON("https://mhr1235.github.io/gpt2_simple_data/chatbot4.json", function(data) {
+  
+
+
+    if (remoteArray.length == 0) {
+
+      
+      for (let i = 0; i < data.texts.length; i++) {
+
+        remoteArray.push(data.texts[i]);
+      }
+  }
+
+randomValueFromArray(remoteArray);
+//console.log(JSON.stringify(alreadyDone));
+//console.log(indexOfItemInMyArray);
+
+$('<div class="message new"><figure class="avatar"><img src=" ' + './images/df'+ (randomNum+1) +'.jpg" /></figure>' + remoteArray[indexOfItemInMyArray] + '</div>').appendTo($('.mCSB_container')).addClass('new');
+
+//document.getElementById("randomValue").innerHTML = remoteArray[indexOfItemInMyArray];
+//document.getElementById("indexLeft").innerHTML = JSON.stringify(alreadyDone);
 
 
 
